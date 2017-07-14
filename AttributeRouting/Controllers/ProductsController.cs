@@ -6,24 +6,15 @@ using System.Web.Mvc;
 
 namespace AttributeRouting.Controllers
 {
-    public class HomeController : Controller
+    public class ProductsController : Controller
     {
-        // GET: Home
-
-        [Route("Products/Index")]
+        // GET: Products
         public ActionResult Index()
         {
             return View();
         }
 
-
-        [Route("Products/{id}")]
         public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        public ActionResult Deals()
         {
             return View();
         }
