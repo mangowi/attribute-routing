@@ -8,6 +8,8 @@ namespace AttributeRouting.Controllers
 {
     public class HomeController : Controller
     {
+
+        // bit.do/attribute-routing
         // GET: Home
 
         [Route("Products/Index")]
