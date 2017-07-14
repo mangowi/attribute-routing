@@ -13,7 +13,7 @@ namespace AttributeRouting.Controllers
 
         // bit.do/attribute-routing
         // GET: Home
-
+        [Route("")]
         [Route("Index")]
         public ActionResult Index()
         {
