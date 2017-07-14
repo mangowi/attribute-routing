@@ -9,12 +9,16 @@ namespace AttributeRouting.Controllers
     public class HomeController : Controller
     {
         // GET: Home
+
+        [Route("Products/Index")]
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Details(int id)
+
+        [Route("Products/{id}/{name?}")]
+        public ActionResult Details(int id, string name)
         {
             return View();
         }
