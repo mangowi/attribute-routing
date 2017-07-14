@@ -27,6 +27,7 @@ namespace AttributeRouting.Controllers
             return View();
         }
 
+        [Route("/~Deals")]
         public ActionResult Deals()
         {
             return View();
