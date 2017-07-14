@@ -6,20 +6,22 @@ using System.Web.Mvc;
 
 namespace AttributeRouting.Controllers
 {
+
+    [RoutePrefix("Products")]
     public class HomeController : Controller
     {
 
         // bit.do/attribute-routing
         // GET: Home
 
-        [Route("Products/Index")]
+        [Route("Index")]
         public ActionResult Index()
         {
             return View();
         }
 
 
-        [Route("Products/{id}")]
+        [Route("{id}")]
         public ActionResult Details(int id)
         {
             return View();
