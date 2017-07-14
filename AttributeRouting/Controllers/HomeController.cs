@@ -8,13 +8,13 @@ namespace AttributeRouting.Controllers
 {
 
     [RoutePrefix("Products")]
+    [Route("{action=index}")]
     public class HomeController : Controller
     {
 
         // bit.do/attribute-routing
         // GET: Home
-        [Route("~/")]
-        [Route("Index")]
+       
         public ActionResult Index()
         {
             return View();
